@@ -89,6 +89,8 @@ GPU_K40 = Device(
 GPU_K80 = Device(
     'K80', clock=560, peek_gflop=5600, mem_bandwidth=480, is_gpu=True)
 
+GPU_M60 = Device('Tesla M60', clock=557, peek_gflop=4925, mem_bandwidth=160, is_gpu=True)
+
 GPU_GEFORCE_780_TI = Device(
     'GeForce 780 Ti',
     clock=875,
@@ -105,7 +107,6 @@ GPU_GEFORCE_750M = Device(
 
 CPU_I7_5930K = Device(
     'CPU i7 5930K', clock=6 * 35000, peek_gflop=289, mem_bandwidth=68)
-
 DEVICES = {
     'TITAN_X': GPU_TITAN_X,
     'K20': GPU_K20,
@@ -115,4 +116,6 @@ DEVICES = {
     'GEFORCE_780_TI': GPU_GEFORCE_780_TI,
     'GEFORCE_750_M': GPU_GEFORCE_750M,
     'CPU_I7': CPU_I7_5930K
+    'M60':GPU_M60
+
 }
