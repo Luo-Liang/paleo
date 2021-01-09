@@ -89,7 +89,7 @@ GPU_K40 = Device(
 GPU_K80 = Device(
     'K80', clock=560, peek_gflop=5600, mem_bandwidth=480, is_gpu=True)
 
-GPU_M60 = Device('Tesla M60', clock=557, peek_gflop=4925, mem_bandwidth=160, is_gpu=True)
+GPU_M60 = Device('Tesla M60', clock=900, peek_gflop=4825, mem_bandwidth=160, is_gpu=True)
 
 GPU_GEFORCE_780_TI = Device(
     'GeForce 780 Ti',
