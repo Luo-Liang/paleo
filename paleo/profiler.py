@@ -267,12 +267,12 @@ def cli(verbose):
 
 @cli.command()
 @click.argument('netspec_files', nargs=-1)
-@click.option('--device_name', default='TITAN_X', help=HELP_DEVICE_NAME)
+@click.option('--device_name', default='M60', help=HELP_DEVICE_NAME)
 @click.option('--network_name', default='ethernet')
 @click.option('--batch_size', default=128)
 @click.option('--use_pipeline', is_flag=True)
 @click.option('--use_only_gemm', is_flag=True)
-@click.option('--num_workers', default='1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,64,128')
+@click.option('--num_workers', default='1,2,4,8,16,32,64,128')
 @click.option('--scaling', default='strong')
 @click.option('--ppp_comp', default=1.0)
 @click.option('--ppp_comm', default=1.0)
@@ -305,7 +305,7 @@ HELP_EXTRACT_CONV_DIR = 'Path to extract conv layers.'
 
 @cli.command()
 @click.argument('netspec_files', nargs=-1)
-@click.option('--device_name', default='TITAN_X', help=HELP_DEVICE_NAME)
+@click.option('--device_name', default='M60', help=HELP_DEVICE_NAME)
 @click.option('--num_warmup', default=10, help=HELP_WARMUP)
 @click.option('--num_iter', default=50, help=HELP_ITER)
 @click.option('--batch_size', type=int)
@@ -324,7 +324,7 @@ def fullpass(netspec_files, device_name, num_warmup, num_iter, batch_size):
 
 @cli.command()
 @click.argument('netspec_files', nargs=-1)
-@click.option('--device_name', default='TITAN_X', help=HELP_DEVICE_NAME)
+@click.option('--device_name', default='M60', help=HELP_DEVICE_NAME)
 @click.option('--num_warmup', default=10, help=HELP_WARMUP)
 @click.option('--num_iter', default=50, help=HELP_ITER)
 @click.option('--extract_conv_dir', help=HELP_EXTRACT_CONV_DIR)
