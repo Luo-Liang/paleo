@@ -286,7 +286,7 @@ def simulate(netspec_files, device_name, network_name, batch_size,
              use_pipeline, use_only_gemm, num_workers, scaling, ppp_comp,
              ppp_comm, parallel, hybrid_workers, separator):
     """Simulate distributed training of a neural network."""
-
+    print("device chosen = %s " % device_name)
     num_workers = [int(x) for x in num_workers.split(',')]
 
     for netspec_file in netspec_files:

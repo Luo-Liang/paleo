@@ -123,4 +123,3 @@ DEVICES = {
     'M60':GPU_M60,
     'T4':GPU_T4
 }
-BOBB
